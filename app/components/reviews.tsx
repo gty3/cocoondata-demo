@@ -34,15 +34,15 @@ const ReviewCard = ({
   image: StaticImageData
 }) => {
   return (
-    <div className="flex flex-row border rounded-lg shadow-lg shadow-gray-300">
-      <div className="p-6">
+    <div className="flex flex-row p-6 border rounded-lg shadow-lg border-gray-50 shadow-gray-300">
+      <div className="">
         <Image height={165} width={165} src={image} alt={name} />
       </div>
 
-      <div className="flex flex-col">
-        <div>{quote}</div>
-        <div>{name}</div>
-        <div>{job}</div>
+      <div className="ml-6 flex flex-col text-[#2e0161]">
+        <div className="font-semibold">{quote}</div>
+        <div className="my-4 text-3xl font-bold">{name}</div>
+        <div className="text-xl font-light">{job}</div>
       </div>
     </div>
   )
