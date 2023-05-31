@@ -11,7 +11,7 @@ export default function Reviews() {
         <div className="text-[#2e0161] text-5xl font-extralight mt-28 mb-10 flex justify-center">
           Customer reviews
         </div>
-        <div className="mb-20 space-y-6">
+        <div className="mb-20 space-y-12">
           {customerReviews.map((review, i) => (
             <ReviewCard key={i} {...review} />
           ))}

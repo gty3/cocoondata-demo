@@ -2,6 +2,7 @@ import Header from './components/header'
 import Body from './components/body'
 import Separator from './components/separator'
 import Reviews from './components/reviews'
+import FAQs from './components/faqs'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
     <Body />
     <Separator />
     <Reviews />
+    <FAQs />
     </>
   )
 }
