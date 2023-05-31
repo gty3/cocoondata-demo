@@ -14,15 +14,15 @@ export default function NavBar() {
       </div>
       <div className="flex flex-col">
         <div className="flex flex-row pb-10 ml-40 space-x-8">
-          {navLinks.map((nav) => (
-            <Link className="text-lg font-bold text-white" href={nav.url}>
+          {navLinks.map((nav, i) => (
+            <Link key={i} className="text-lg font-bold text-white" href={nav.url}>
               {nav.display}
             </Link>
           ))}
         </div>
         <div className="flex flex-row space-x-8">
-          {navDropdowns.map((nav) => (
-            <Link className="text-[#c0edb6] text-2xl font-bold" href={nav.url}>
+          {navDropdowns.map((nav, i) => (
+            <Link key={i} className="text-[#c0edb6] text-2xl font-bold" href={nav.url}>
               {nav.display}
             </Link>
           ))}
