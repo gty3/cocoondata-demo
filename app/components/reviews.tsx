@@ -8,7 +8,7 @@ export default function Reviews() {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col max-w-6xl">
-        <div className="text-[#2e0161] text-5xl font-extralight mt-28 mb-10 flex justify-center">
+        <div className="text-purple text-5xl font-extralight mt-28 mb-10 flex justify-center">
           Customer reviews
         </div>
         <div className="mb-20 space-y-12">
@@ -39,7 +39,7 @@ const ReviewCard = ({
         <Image height={165} width={165} src={image} alt={name} />
       </div>
 
-      <div className="ml-6 flex flex-col text-[#2e0161]">
+      <div className="ml-6 flex flex-col text-purple">
         <div className="font-semibold">{quote}</div>
         <div className="my-4 text-3xl font-bold">{name}</div>
         <div className="text-xl font-light">{job}</div>

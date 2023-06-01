@@ -1,7 +1,9 @@
 export default function Accordian() {
   return (
-    <div>
-
+    <div className="flex justify-center bg-white">
+      <div className="max-w-6xl">
+      Accordian
+      </div>
     </div>
   )
 }

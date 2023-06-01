@@ -3,7 +3,7 @@ import NavBar from "./header/navbar"
 
 export default function Header() {
   return (
-    <div className="bg-[#2e0161]">
+    <div className="bg-purple">
       <div className="flex justify-center">
         <div className="max-w-6xl m-3">
           <div className="mt-6 mb-24">
