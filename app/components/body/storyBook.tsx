@@ -5,7 +5,7 @@ import Card3 from "./storyBook/card3";
 
 export default function StoryBook() {
   return (
-    <div className="flex flex-col mb-20 space-y-10">
+    <div className="flex flex-col mb-12 space-y-10 md:mb-20">
       <Card1 />
       <Card2 />
       <Card3 />

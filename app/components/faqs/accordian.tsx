@@ -5,7 +5,7 @@ export default function Accordian() {
           {QandAs.map((qanda, i) => (
             <div key={i} className="flex flex-col items-center my-8 cursor-pointer">
               <div className="w-16 h-1.5 bg-purple" />
-              <div className="mt-2 mb-3 font-light text-purple" key={i}>
+              <div className="mt-2 mb-3 font-light text-center text-purple" key={i}>
                 {"Q: "}{qanda.question}
               </div>
               {i + 1 < QandAs.length && <div className="w-11/12 h-0.5 bg-purple" />}
