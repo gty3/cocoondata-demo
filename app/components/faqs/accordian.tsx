@@ -3,7 +3,7 @@ export default function Accordian() {
     <div className="flex justify-center">
       <div className="w-[72rem] bg-white my-4">
           {QandAs.map((qanda, i) => (
-            <div className="flex flex-col items-center my-8 cursor-pointer">
+            <div key={i} className="flex flex-col items-center my-8 cursor-pointer">
               <div className="w-16 h-1.5 bg-purple" />
               <div className="mt-2 mb-3 font-light text-purple" key={i}>
                 {"Q: "}{qanda.question}

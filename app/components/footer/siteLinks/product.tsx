@@ -5,7 +5,7 @@ export default function Product() {
     <div className="flex flex-col">
       <h3 className="mb-3 font-bold">Product</h3>
       {productLinks.map((link, i) => (
-        <SiteLink {...link} i={i} />
+        <SiteLink {...link} key={i} />
       ))}
     </div>
   )

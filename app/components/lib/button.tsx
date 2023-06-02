@@ -6,7 +6,7 @@ export default function Button({
   children: string
 }) {
   const colorVariants: { [key: string]: string } = {
-    green: "bg-lightGreen hover:text-lightGreen hover:bg-[#69727d]",
+    green: "bg-lightGreen hover:text-lightGreen hover:bg-[#333333]",
     purple: "bg-purple text-white hover:text-lightGreen",
   }
 

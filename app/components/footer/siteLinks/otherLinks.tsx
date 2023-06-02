@@ -4,7 +4,7 @@ export default function OtherLinks() {
   return (
     <div className="flex flex-col">
       {otherLinks.map((link, i) => (
-        <SiteLink {...link} i={i} />
+        <SiteLink {...link} key={i} />
       ))}
     </div>
   )
