@@ -7,7 +7,7 @@ export default function TextSide() {
         <div className="text-xl font-extralight">
           Encrypted file sharing platform
         </div>
-        <div className="mt-4 mb-8 text-5xl font-extralight">
+        <div className="mt-4 mb-6 md:mb-8 text-5xl leading-[3.5rem] font-extralight">
           Ultra-secure, ultra-easy, ultra-scalable.
         </div>
         <div>
@@ -16,8 +16,8 @@ export default function TextSide() {
           }
         </div>
       </div>
-      <div className="flex flex-row mt-16 mb-24 space-x-10">
-        <Button color="green">GET STARTED</Button>
+      <div className="flex flex-col mt-8 mb-10 md:mt-16 md:space-x-10 md:flex-row md:mb-24">
+        <div className="flex justify-center mb-8 md:mb-0"><Button color="green">GET STARTED</Button></div>
         <button className="p-2 text-lg font-bold text-white">WATCH VIDEO</button>
       </div>
     </div>
