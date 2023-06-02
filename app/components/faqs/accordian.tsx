@@ -1,8 +1,16 @@
 export default function Accordian() {
   return (
-    <div className="flex justify-center bg-white">
-      <div className="max-w-6xl">
-      Accordian
+    <div className="flex justify-center">
+      <div className="w-[72rem] bg-white my-4">
+          {QandAs.map((qanda, i) => (
+            <div className="flex flex-col items-center my-8 cursor-pointer">
+              <div className="w-16 h-1.5 bg-purple" />
+              <div className="mt-2 mb-3 font-light text-purple" key={i}>
+                {"Q: "}{qanda.question}
+              </div>
+              {i + 1 < QandAs.length && <div className="w-11/12 h-0.5 bg-purple" />}
+            </div>
+          ))}
       </div>
     </div>
   )
@@ -11,22 +19,23 @@ export default function Accordian() {
 const QandAs = [
   {
     question: "How is Cocoon Data priced?",
-    answer: "Cocoon Data has a simple pricing model of $15 per user, with a minimum sign up of three users. There are  no annual fees or contracts. You can add or remove users at any time. Cocoon’s efficient pricing model means that organizations of any size can enjoy secure file sharing that is affordable and highly scalable, with no minimum requirements. "
+    answer: "",
   },
   {
-    question: "How does Cocoon Data compare to other popular file sharing platforms?",
-    answer: ""
+    question:
+      "How does Cocoon Data compare to other popular file sharing platforms?",
+    answer: "",
   },
   {
-    question: "",
-    answer: ""
+    question: "How do you keep our files secure?",
+    answer: "",
   },
   {
-    question: "",
-    answer: ""
+    question: "Is Cocoon data easy to learn and easy to use?",
+    answer: "",
   },
   {
-    question: "",
-    answer: ""
+    question: "How do I become a Cocoon Data Partner?",
+    answer: "",
   },
 ]

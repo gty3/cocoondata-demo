@@ -8,7 +8,7 @@ export default function FAQs() {
         Frequently asked questions
       </div>
       <Accordian />
-      <div className="flex flex-col text-purple">
+      <div className="mt-28 text-purple">
         <div className="flex justify-center text-4xl">Stay updated</div>
         <div className="flex justify-center my-5">
           The latest news, articles, and resources, sent straight to your inbox.
