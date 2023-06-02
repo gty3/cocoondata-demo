@@ -7,7 +7,7 @@ import HIPAA from "public/body/badges/badge5.png"
 
 export default function BadgeBar() {
   return (
-    <div className="flex flex-row justify-center mb-20 space-x-20">
+    <div className="grid justify-center mb-20 space-x-20 lg:flex lg:flex-row">
       {badges.map((badge, i) => (
         <div key={i} className="flex flex-col justify-center">
         <Image  src={badge.src} alt={badge.alt} />
