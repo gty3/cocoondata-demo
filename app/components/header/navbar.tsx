@@ -12,8 +12,8 @@ export default function NavBar() {
           alt="Cocoon Data"
         />
       </div>
-      {/* <div className="position xl:hidden"><Burger /></div> */}
-      <div className="flex flex-col">
+      <div className="absolute p-2 cursor-pointer right-8 xl:hidden"><Burger /></div>
+      <div className="flex-col hidden xl:flex">
         
         <div className="flex flex-row pb-10 ml-40 space-x-8">
           {navLinks.map((nav, i) => (
