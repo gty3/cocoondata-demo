@@ -5,7 +5,7 @@ import Button from "../lib/button"
 export default function CaseStudy() {
   return (
     <div>
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-6 md:-mt-12">
         <Image src={LockCrosshair} alt="Lock crosshair"></Image>
       </div>
       <div className="flex justify-center">

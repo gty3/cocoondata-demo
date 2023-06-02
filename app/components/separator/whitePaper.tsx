@@ -10,8 +10,7 @@ export default function WhitePaper() {
       </div>
       <div className="flex justify-center">
         <div className="max-w-xl text-3xl md:text-4xl leading-[3rem] text-center text-white font-extralight">
-          <div>What Defense Contractors need</div>
-          {" to know about the US Government's CMMC requirements"}
+          <div>What Defense Contractors need to know about the US Government's CMMC requirements</div>
         </div>
         {/* <div className="flex justify-center mt-6"></div> */}
       </div>
