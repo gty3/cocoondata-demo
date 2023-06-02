@@ -6,9 +6,9 @@ import BadgeBar from "./reviews/badgeBar"
 
 export default function Reviews() {
   return (
-    <div className="flex justify-center mb-6">
-      <div className="flex flex-col max-w-6xl">
-        <div className="flex justify-center mb-10 text-5xl text-purple font-extralight mt-28">
+    <div className="flex justify-center mt-12 mb-6 md:mt-24">
+      <div className="flex flex-col max-w-6xl m-4">
+        <div className="flex justify-center mb-10 text-4xl md:text-5xl text-purple font-extralight ">
           Customer reviews
         </div>
         <div className="mb-20 space-y-12">
@@ -34,14 +34,14 @@ const ReviewCard = ({
   image: StaticImageData
 }) => {
   return (
-    <div className="flex flex-row p-6 border rounded-lg shadow-lg border-gray-50 shadow-gray-300">
-      <div className="">
+    <div className="flex flex-col p-3 border border-gray-100 rounded-lg shadow-lg md:p-6 md:flex-row shadow-gray-300">
+      <div className="flex justify-center flex-none mb-6 md:mb-0 md:block">
         <Image height={165} width={165} src={image} alt={name} />
       </div>
 
-      <div className="flex flex-col ml-6 text-purple">
+      <div className="flex flex-col mx-2 md:ml-6 text-purple">
         <div className="font-semibold">{quote}</div>
-        <div className="my-4 text-3xl font-bold">{name}</div>
+        <div className="my-4 text-xl font-bold md:text-3xl">{name}</div>
         <div className="text-xl font-light">{job}</div>
       </div>
     </div>
