@@ -1,13 +1,11 @@
-import Link from "next/link"
+import SiteLink from "../../lib/siteLink"
 
 export default function Product() {
   return (
-    <div>
-      <h3 className="text-bold">Product</h3>
+    <div className="flex flex-col">
+      <h3 className="mb-3 font-bold">Product</h3>
       {productLinks.map((link, i) => (
-        <Link href={link.href} key={i}>
-          {link.name}
-        </Link>
+        <SiteLink {...link} i={i} />
       ))}
     </div>
   )

@@ -1,21 +1,18 @@
 import Link from "next/link"
+import SiteLink from "../../lib/siteLink"
 
 export default function IndustriesAndCompliance() {
   return (
-    <div>
-      <h3 className="text-bold">Industries</h3>
+    <div className="flex flex-col">
+      <h3 className="mb-3 font-bold">Industries</h3>
       {industryLinks.map((link, i) => (
-        <Link href={link.href} key={i}>
-          {link.name}
-        </Link>
+        <SiteLink {...link} i={i} />
       ))}
-      <Link href="/" className="text-bold">
+      <Link href="/" className="mt-4 mb-3 font-bold">
         Compliance overview
       </Link>
       {complianceLinks.map((link, i) => (
-        <Link href={link.href} key={i}>
-          {link.name}
-        </Link>
+        <SiteLink {...link} i={i} />
       ))}
     </div>
   )

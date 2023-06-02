@@ -22,7 +22,7 @@ export default function NavBar() {
         </div>
         <div className="flex flex-row space-x-8">
           {navDropdowns.map((nav, i) => (
-            <Link key={i} className="text-[#c0edb6] text-2xl font-bold" href={nav.url}>
+            <Link key={i} className="text-lightGreen text-2xl font-bold" href={nav.url}>
               {nav.display}
             </Link>
           ))}

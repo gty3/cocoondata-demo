@@ -4,9 +4,9 @@ import Socials from "./footer/socials"
 
 export default function Footer() {
   return (
-    <div className="pb-24 bg-purple">
+    <div className="py-24 bg-purple">
       <div className="flex justify-center">
-        <div className="flex flex-row max-w-6xl">
+        <div className="flex flex-row space-x-24 max-w-7xl">
           <CocoonData />
           <SiteLinks />
         </div>

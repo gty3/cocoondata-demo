@@ -1,12 +1,10 @@
-import Link from "next/link"
+import SiteLink from "../../lib/siteLink"
 
 export default function OtherLinks() {
   return (
-    <div>
+    <div className="flex flex-col">
       {otherLinks.map((link, i) => (
-        <Link href={link.href} key={i}>
-          {link.name}
-        </Link>
+        <SiteLink {...link} i={i} />
       ))}
     </div>
   )

@@ -5,7 +5,7 @@ import OtherLinks from "./siteLinks/otherLinks"
 export default function SiteLinks() {
   return (
     <div>
-      <div className="flex flex-row text-white">
+      <div className="flex flex-row mt-20 space-x-20 text-white">
         <Product />
         <Industries />
         <OtherLinks />
