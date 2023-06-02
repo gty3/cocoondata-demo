@@ -6,7 +6,7 @@ import REDHILL from "public/reviews/badges/redhill.png"
 
 export default function BadgeBar() {
   return (
-    <div className="flex flex-row justify-center mb-20 space-x-20">
+    <div className="grid flex-col justify-center mb-10 space-y-10 lg:mb-20 lg:space-y-0 lg:space-x-20 grid-auto lg:flex lg:flex-row">
       {badges.map((badge, i) => (
         <div key={i} className="flex flex-col justify-center">
         <Image src={badge.src} alt={badge.alt} />
